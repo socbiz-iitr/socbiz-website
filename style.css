@@ -1,0 +1,144 @@
+* {
+  margin: -5px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url('Background.png') no-repeat center center fixed;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 10;
+}
+
+.logo img {
+  height: 86px;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a.active::after {
+  content: '';
+  height: 2px;
+  background: #1cb98b;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -4px;
+}
+
+.hero {
+  padding-top: 8rem;
+  max-width: 800px;
+  margin: auto;
+  justify-content: space-between;
+  min-height: 200vh;
+}
+
+.sb-logo img {
+  height: 240px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0.5rem;
+  font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+h1 .green {
+  color: #1cb98b;
+}
+
+p.description {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #1cb98b;
+  font-weight: 600;
+  margin-top: 4rem;
+}
+
+.discover {
+  margin-top: 4rem;
+  font-size: 0.8rem;
+  color: #777;
+  letter-spacing: 2px;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+  margin-top: 0.5rem;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
+#events-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+#events-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.event-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.event-card {
+  flex: 0 0 auto;
+  width: 280px;
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 16px;
+  scroll-snap-align: start;
+}
