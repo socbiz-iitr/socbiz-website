@@ -1,79 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - Society of Business</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- HEADER/NAVBAR -->
-  <header>
+  <header style="position: fixed; top: 0; left: 0; width: 100vw; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 999; box-shadow: 0 2px 20px rgba(26,188,156,0.08);">
     <div class="logo">
-      <a href="main.html"><img src="Logo/Society.png" alt="Logo"></a>
+      <a href="index.html"><img src="assets/logo/Society.png" alt="Logo"></a>
     </div>
     <nav>
-      <a href="main.html" >Home</a>
-      <a href="main.html#events-section">Events</a>
-      <a href="main.html#socbiz-resources">Resources</a>
-      <a href="#socbiz-projects">Projects</a>
+      <a href="index.html" >Home</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="projects.html">Projects</a>
       <a href="about.html" class="active">About us</a>
-      <a href="main.html#Contact-section">Contact us</a>
+      <a href="contact.html">Contact us</a>
     </nav>
   </header>
 
   <!-- ABOUT SECTION -->
-<section class="about-section">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>Who are <span class="highlight">WE</span>?</h2>
-      <p>
-        A dynamic student-led organization dedicated to nurturing future leaders in consulting, product 
-        management, and data analytics. Established in 2009 and rebranded in 2023, SocBiz has consistently 
-        provided a platform for students to engage in real-world business challenges and develop essential skills.
-      </p>
-    </div>
-    <div class="about-logo">
-      <img src="Logo/Socbiz2.png" alt="SocBiz Logo" />
-    </div>
-  </div>
-</section>
-
-<section class="verticals-section">
-  <h2 class="verticals-title">OUR <span class="highlight">VERTICALS</span></h2>
-  <div class="verticals-grid">
-    
-    <div class="vertical-card">
-      <button class="filled">PRODUCT</button>
-      <div class="vertical-content">
-        <div class="product-about">Through structured curricula, case competitions, 
-        and real-life projects, students learn to apply product management 
-        frameworks and tools. For instance, members have worked on projects like minimizing 
-        e-commerce returns and improving user onboarding for startups.</div>
-      </div>
-      
-    </div>
-
-    <div class="vertical-card">
-      <button class="outlined">ANALYTICS</button>
-      <div class="vertical-content">
-        <div class="analytics-about">This vertical aims to prepare students for data-driven decision-making 
-          roles by providing hands-on experience in analyzing and deriving insights from data.</div>
+  <section class="about-section hero-section" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 120px 0 80px 0; text-align: center; position: relative; overflow: hidden;">
+    <div class="about-content hero-content" style="max-width: 900px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1;">
+      <h2 class="hero-title" style="font-size: 3.2em; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.02em;">About <span class="highlight" style="color: #1abc9c;">SocBiz IITR</span></h2>
+      <p style="font-size: 1.3em; opacity: 0.95; font-weight: 300; max-width: 700px; margin: 0 auto 40px auto;"> <b>Society of Business, IIT Roorkee</b> (SocBiz IITR) is a premier student organization dedicated to developing proficient problem solvers and future business leaders in <b>Consulting, Product Management, and Data Analytics</b>. Established in 2009 and rebranded in 2023, SocBiz IITR fosters an environment that encourages the exploration and application of business acumen to real-world challenges.</p>
+      <p style="font-size: 1.1em; opacity: 0.95; font-weight: 300; max-width: 700px; margin: 0 auto 0 auto;">We collaborate with industry leaders, engage in impactful projects, and offer a platform for students to learn, experiment, and excel. Our initiatives include comprehensive training modules, workshops with industry experts, and participation in national and international competitions.</p>
+      <div class="about-logo" style="margin-top: 40px;">
+        <img src="assets/logo/Socbiz2.png" alt="SocBiz Logo" style="max-width: 220px; height: auto;" />
       </div>
     </div>
+  </section>
 
-    <div class="vertical-card">
-      <button class="filled">CONSULT</button>
-      <div class="vertical-content">
-        <div class="consult-about">Through these activities, students gain insights into the consulting industry
-           and prepare for careers in management consulting.</div>
+  <section class="verticals-section" style="max-width: 1400px; margin: 0 auto; padding: 80px 24px;">
+    <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+      <h2 class="section-title" style="font-size: 2.5em; font-weight: 700; color: #2c3e50; margin-bottom: 16px; position: relative;">Our <span class="highlight" style="color: #1abc9c;">Verticals</span></h2>
+    </div>
+    <div class="verticals-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 44px 48px; align-items: stretch;">
+      <div class="vertical-card" style="background: white; border-radius: 16px; padding: 44px 40px; box-shadow: 0 8px 32px rgba(26, 188, 156, 0.10); border: 1.5px solid rgba(26, 188, 156, 0.13); display: flex; flex-direction: column; justify-content: space-between; min-height: 260px;">
+        <button class="filled" style="background: linear-gradient(135deg, #1abc9c, #16a085); color: white; border: none; font-size: 1.1em; font-weight: 600; padding: 12px 32px; border-radius: 12px; margin-bottom: 24px;">Consulting</button>
+        <div class="consult-about" style="font-size: 1.1em; color: #2c3e50;">Training, case competitions, and real-life projects to prepare students for careers in management consulting. Members have worked on projects like organizational analysis and market evaluation for global firms.</div>
+      </div>
+      <div class="vertical-card" style="background: white; border-radius: 16px; padding: 44px 40px; box-shadow: 0 8px 32px rgba(26, 188, 156, 0.10); border: 1.5px solid rgba(26, 188, 156, 0.13); display: flex; flex-direction: column; justify-content: space-between; min-height: 260px;">
+        <button class="filled" style="background: linear-gradient(135deg, #1abc9c, #16a085); color: white; border: none; font-size: 1.1em; font-weight: 600; padding: 12px 32px; border-radius: 12px; margin-bottom: 24px;">Product Management</button>
+        <div class="product-about" style="font-size: 1.1em; color: #2c3e50;">Structured curricula, case competitions, and hands-on projects. Members have contributed to startups like Tvelp and CoverSure, focusing on marketing strategy and user engagement.</div>
+      </div>
+      <div class="vertical-card" style="background: white; border-radius: 16px; padding: 44px 40px; box-shadow: 0 8px 32px rgba(26, 188, 156, 0.10); border: 1.5px solid rgba(26, 188, 156, 0.13); display: flex; flex-direction: column; justify-content: space-between; min-height: 260px;">
+        <button class="outlined" style="background: white; border: 2px solid #1abc9c; color: #1abc9c; font-size: 1.1em; font-weight: 600; padding: 12px 32px; border-radius: 12px; margin-bottom: 24px;">Analytics</button>
+        <div class="analytics-about" style="font-size: 1.1em; color: #2c3e50;">Preparing students for data-driven decision-making roles through workshops, analytics challenges, and collaborative research projects with industry and academia.</div>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <section class="achievements-section" style="max-width: 1100px; margin: 0 auto 80px auto; padding: 0 24px;">
+    <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+      <h2 class="section-title" style="font-size: 2.2em; font-weight: 700; color: #2c3e50; margin-bottom: 16px; position: relative;">Achievements & Legacy</h2>
+    </div>
+    <ul class="achievements-list" style="background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(26, 188, 156, 0.10); border: 1.5px solid rgba(26, 188, 156, 0.13); padding: 40px 40px 40px 60px; font-size: 1.1em; color: #2c3e50; list-style: disc inside;">
+      <li style="margin-bottom: 18px;">Winners in global case competitions and Inter-IIT awards (Gold in Analytics Challenge 2023, Silver and Bronze in Product and Analytics).</li>
+      <li style="margin-bottom: 18px;">Collaborative research projects, including automation for criminal investigation and decarbonization trends with global companies.</li>
+      <li>Hosted flagship events like Business Baazigar and Pan India Case Competition with 3,000+ participants.</li>
+    </ul>
+  </section>
+
+  <section class="connect-section" style="max-width: 1100px; margin: 0 auto 80px auto; padding: 0 24px;">
+    <div class="section-header" style="text-align: center; margin-bottom: 24px;">
+      <h2 class="section-title" style="font-size: 2em; font-weight: 700; color: #2c3e50; margin-bottom: 12px; position: relative;">Connect With Us</h2>
+    </div>
+    <div style="background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(26, 188, 156, 0.10); border: 1.5px solid rgba(26, 188, 156, 0.13); padding: 36px 40px; text-align: center;">
+      <p style="font-size: 1.1em; color: #2c3e50; margin-bottom: 18px;">Stay updated on our blog series, achievements, and event announcements. Join us on our mission to build the next generation of business leaders and innovators at IIT Roorkee.</p>
+      <div class="connect-links" style="font-size: 1.1em;">
+        <a href="https://www.linkedin.com/company/society-of-business/posts/?feedView=all" target="_blank" style="color: #1abc9c; text-decoration: none; font-weight: 600; margin: 0 12px;">LinkedIn</a> |
+        <a href="https://www.instagram.com/socbiz_iitr/" target="_blank" style="color: #e4405f; text-decoration: none; font-weight: 600; margin: 0 12px;">Instagram</a> |
+        <a href="https://medium.com/@socbiziitr" target="_blank" style="color: #222; text-decoration: none; font-weight: 600; margin: 0 12px;">Medium</a> |
+        <a href="https://linktr.ee/socbiz_iitr" target="_blank" style="color: #34495e; text-decoration: none; font-weight: 600; margin: 0 12px;">Linktree</a>
+      </div>
+    </div>
+  </section>
 
   <section class="projects-section" id="socbiz-projects">
     <h2 class="projects-title">PROJECTS</h2>
@@ -90,10 +97,8 @@
     </div>
   </section>
 
-
-
-<section class="myteam-section" id="socbic-team">
-  <h2>Meet Our Team</h2>
+  <section class="myteam-section" id="socbic-team">
+    <h2>Meet Our Team</h2>
 
     <div class="team-container">
       <div class="team-column">
@@ -156,7 +161,7 @@
       </div>
     </div>
 
-</section>
+  </section>
 
 </body>
 
@@ -165,7 +170,7 @@
   <div class="footer-container">
     <!-- Left: Logo and Motto -->
     <div class="footer-left">
-      <img src="Logo/Socbiz2.png" alt="Society Logo" class="footer-logo" />
+      <img src="assets/logo/Socbiz2.png" alt="Society Logo" class="footer-logo" />
       <p>Empowering students with the knowledge, skills, and network to thrive in the world of business and strategy.</p>
       <p class="footer-motto">"Think. Build. Analyse."</p>
     </div>
@@ -189,11 +194,11 @@
       <p>Phone: +91 7017512838</p>
       <div class="social-icons">
         <a href="https://www.instagram.com/socbiz_iitr/" target="_blank">
-          <img src="Logo/1ed6e0a9e69176a5fdb7e090a1046b86.png" alt="Instagram" />
+          <img src="assets/logo/1ed6e0a9e69176a5fdb7e090a1046b86.png" alt="Instagram" />
         </a>
         <a href="https://www.linkedin.com/company/society-of-business/posts/?feedView=all" target="_blank">
-          <img src="Logo/LinkedIn_logo_initials.png" alt="LinkedIn" />
-        </a>
+          <img src="assets/logo/LinkedIn_logo_initials.png" alt="LinkedIn" />
+        </a>  
       </div>
     </div>
   </div>
