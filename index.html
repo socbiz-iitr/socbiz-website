@@ -44,23 +44,32 @@
   </section>
 
   <!-- Featured Events Section -->
-  <section class="featured-events">
+  <section class="home-featured-events">
     <h2>Featured Events</h2>
-    <div class="event-cards">
-      <div class="event-card">
-        <h3>Consulting Bootcamp</h3>
-        <p class="event-date">July 15, 2025</p>
-        <p>Kickstart your consulting journey with industry experts and real case studies.</p>
+    <div class="home-event-cards">
+      <div class="home-event-card">
+        <img src="https://placehold.co/360x220/e2e8f0/e2e8f0" alt="Consulting Bootcamp Event" />
+        <div class="card-content">
+          <h3>Consulting Bootcamp</h3>
+          <p class="event-date">July 15, 2025</p>
+          <p>Kickstart your consulting journey with industry experts and real case studies.</p>
+        </div>
       </div>
-      <div class="event-card">
-        <h3>Product Management 101</h3>
-        <p class="event-date">August 2, 2025</p>
-        <p>Learn the essentials of product management from top PMs in the industry.</p>
+      <div class="home-event-card">
+        <img src="https://placehold.co/360x220/dbeafe/dbeafe" alt="Product Management 101 Event" />
+        <div class="card-content">
+          <h3>Product Management 101</h3>
+          <p class="event-date">August 2, 2025</p>
+          <p>Learn the essentials of product management from top PMs in the industry.</p>
+        </div>
       </div>
-      <div class="event-card">
-        <h3>Analytics for Business</h3>
-        <p class="event-date">August 20, 2025</p>
-        <p>Hands-on workshop on business analytics tools and techniques.</p>
+      <div class="home-event-card">
+        <img src="https://placehold.co/360x220/d1fae5/d1fae5" alt="Analytics for Business Event" />
+        <div class="card-content">
+          <h3>Analytics for Business</h3>
+          <p class="event-date">August 20, 2025</p>
+          <p>Hands-on workshop on business analytics tools and techniques.</p>
+        </div>
       </div>
     </div>
     <a href="events.html" class="section-btn">See all events</a>
@@ -229,38 +238,32 @@
 </section>
 
   <!-- Featured Resources Section -->
-  <section class="featured-resources">
+  <section class="home-featured-resources">
     <h2>Featured Resources</h2>
-    <div class="resource-cards">
-      <div class="resource-card">
-        <img class="page" src="assets/logo/page.png" alt="Guide Icon" />
-        <h3>Case Interview Guides</h3>
-        <p>Comprehensive guides and frameworks for solving consulting case interviews.</p>
+    <div class="home-resource-cards">
+      <div class="home-resource-card">
+        <img src="https://placehold.co/360x220/e2e8f0/e2e8f0" alt="Case Interview Guides" />
+        <div class="card-content">
+          <h3>Case Interview Guides</h3>
+          <p>Comprehensive guides and frameworks for solving consulting case interviews.</p>
+        </div>
       </div>
-      <div class="resource-card">
-        <img src="assets/logo/Book.png" alt="Casebook Icon" />
-        <h3>Casebooks</h3>
-        <p>Collection of real and practice cases from top consulting firms and business schools.</p>
+      <div class="home-resource-card">
+        <img src="https://placehold.co/360x220/dbeafe/dbeafe" alt="Casebooks" />
+        <div class="card-content">
+          <h3>Casebooks</h3>
+          <p>Collection of real and practice cases from top consulting firms and business schools.</p>
+        </div>
       </div>
-      <div class="resource-card">
-        <img src="assets/logo/report.png" alt="Report Icon" />
-        <h3>Industry Reports</h3>
-        <p>Latest reports and insights on different industries for better business understanding.</p>
+      <div class="home-resource-card">
+        <img src="https://placehold.co/360x220/d1fae5/d1fae5" alt="Industry Reports" />
+        <div class="card-content">
+          <h3>Industry Reports</h3>
+          <p>Latest reports and insights on different industries for better business understanding.</p>
+        </div>
       </div>
     </div>
     <a href="resources.html" class="section-btn">See all resources</a>
-  </section>
-
-  <!-- Explore More Section -->
-  <section class="explore-more">
-    <a href="#" class="explore-btn" onclick="document.querySelector('.explore-dropdown').classList.toggle('show'); return false;">Explore More</a>
-    <div class="explore-dropdown">
-      <a href="events.html">Events</a>
-      <a href="resources.html">Resources</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
   </section>
 
   <!-- Scripts -->
@@ -362,6 +365,13 @@
 </html>
 
 <style>
+.featured-events h2,
+.featured-resources h2 {
+  font-size: 2.5rem;
+  color: #1cb98b;
+  margin-bottom: 40px;
+}
+
 .featured-events, .featured-resources {
   max-width: 1100px;
   margin: 10px auto 0 auto;
@@ -426,7 +436,7 @@
   transition: background 0.2s;
 }
 .explore-btn:hover {
-  background: #1abc9c;
+  background: #1cb98b;
 }
 .explore-dropdown {
   display: none;
@@ -456,7 +466,78 @@
 }
 .explore-dropdown a:hover {
   background: #f6f6f6;
-  color: #1abc9c;
+  color: #1cb98b;
+}
+
+/* New Styles for Home Page Featured Events */
+.home-featured-events, .home-featured-resources {
+  max-width: 1200px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.home-featured-events h2, .home-featured-resources h2 {
+  font-size: 2.5rem;
+  color: #1cb98b;
+  margin-bottom: 50px;
+}
+
+.home-event-cards, .home-resource-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.home-event-card, .home-resource-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  width: 360px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-event-card:hover, .home-resource-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.home-event-card img, .home-resource-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.home-event-card .card-content, .home-resource-card .card-content {
+  padding: 24px;
+}
+
+.home-event-card h3, .home-resource-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.event-date {
+  color: #1cb98b;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.section-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 28px;
+  background: #1cb98b;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.section-btn:hover {
+  background: #159c82;
 }
 </style>
 

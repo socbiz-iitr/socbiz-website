@@ -157,7 +157,7 @@ p.description {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #03ce6c;
+  color: #1cb98b;
 }
 
 .event-scroll-container {
@@ -215,7 +215,7 @@ p.description {
 
 #Team-section h2{
   font-size: 2.5rem;
-  color: #03ce6c;
+  color: #1cb98b;
 }
 
 .carousel-container {
@@ -294,7 +294,7 @@ p.description {
 .meet-members-btn {
   margin-top: 1.5rem;
   padding: 0.8rem 1.6rem;
-  background-color: #03ce6c;
+  background-color: #1cb98b;
   color: white;
   font-weight: bold;
   font-size: 1rem;
@@ -305,7 +305,7 @@ p.description {
 }
 
 .meet-members-btn:hover {
-  background-color: #039944;
+  background-color: #159c82;
 }
 
 /* Add this in your style.css */
@@ -319,7 +319,7 @@ p.description {
   font-size: 2.5rem;
   text-align: center; 
   margin-bottom: 1rem;
-  color: #03ce6c;
+  color: #1cb98b;
 }
 
 .contact-container {
@@ -442,7 +442,7 @@ p.description {
 }
 .myteam-section h2{
   font-size: 2.5rem;
-  color: #03ce6c;
+  color: #1cb98b;
 }
 .team-container{
   display: flex;
@@ -533,7 +533,7 @@ p.description {
 }
 
 .resources-section h2 {
-  color: #03ce6c; /* Green */
+  color: #1cb98b; /* Primary Green */
   font-size: 2.5rem;
   margin-bottom: 40px;
 }
@@ -878,7 +878,7 @@ button.outlined:hover {
 }
 #Team-section h2 {
   font-size: 2.5rem;
-  color: #03ce6c;
+  color: #1cb98b;
   margin-top: 2rem;
 }
 
@@ -959,8 +959,8 @@ button.outlined:hover {
 .meet-members-btn {
   margin-top: 1.5rem;
   padding: 0.8rem 1.6rem;
-  background-color: #03ce6c;
-  color: #fff;
+  background-color: #1cb98b;
+  color: white;
   font-weight: bold;
   border: none;
   border-radius: 8px;
@@ -968,5 +968,5 @@ button.outlined:hover {
   transition: background-color 0.3s;
 }
 .meet-members-btn:hover {
-  background-color: #039944;
+  background-color: #159c82;
 }
